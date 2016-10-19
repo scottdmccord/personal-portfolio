@@ -1,3 +1,122 @@
+body {
+  height: 100vh;
+}
+
+.nameHeader {
+  margin: 0 auto;
+  width:;
+  background-color: rgb( 240, 240, 240);
+  color: rgb(5, 5, 5);
+}
+
+.breakDiv {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  height: 150px;
+  width: 100%;
+/*  background-color: black;*/
+}
+
 h1 {
   font-family: 'Rock Salt', cursive;
+  margin: 0 auto;
+  text-align: center
+}
+
+.aboutMeDiv {
+  height: 600px;
+  margin-bottom: 20px;
+}
+
+.skillsDiv {
+  height: 600px;
+  margin-bottom: 20px;
+}
+
+.blocks {
+  margin-left: 5%;
+  margin-right: 5%;
+  display: inline-block;
+  box-sizing: border-box;
+/*  border: solid black 2px;*/
+  width: 40%;
+  height: 600px;
+}
+
+.textFlex {
+  margin-right: 5%;
+  float: right;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+  border: solid black 2px;
+  width: 45%;
+  height: 600px;
+}
+
+.textFlexLeft {
+  float: left;
+}
+
+.textBox {
+  height: 500px;
+  width: 400px;
+  text-align: center;
+}
+
+
+p {
+  text-align: justify;
+}
+
+.skillsList {
+  text-align: center;
+}
+
+.blankRow {
+  height: 10%;
+}
+
+.row {
+  height: 30%;
+  width: 100%;
+  display: flex;
+}
+
+.right {
+  justify-content: flex-end;
+}
+
+.block {
+  height: 100%;
+  width: 170px;
+  display: inline-block;
+  box-sizing: border-box;
+/*  border: solid black 2px;*/
+}
+
+.one {
+  background-color: red;
+}
+
+.two {
+  background-color: orange;
+}
+
+.three {
+  background-color: yellow;
+}
+
+.four {
+  background-color: green;
+}
+
+.five {
+  background-color: blue;
+}
+
+.six {
+  background-color: purple;
 }
