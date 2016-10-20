@@ -1,26 +1,51 @@
 body {
-  height: 100vh;
+  background-color: rgb( 240, 240, 240);
 }
 
-.nameHeader {
+.landingDiv {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   margin: 0 auto;
-  width:;
+  margin-top: 60px;
+  height: 80vh;
+  width: 80vw;
   background-color: rgb( 240, 240, 240);
   color: rgb(5, 5, 5);
+  border: solid 2px rgb(5, 5, 5) ;
 }
 
 .breakDiv {
-  margin-top: 20px;
-  margin-bottom: 20px;
+  margin-top: 85px;
+  margin-bottom: 85px;
   height: 150px;
   width: 100%;
-/*  background-color: black;*/
+  background-color: rgb(194, 35, 38);
+}
+
+.nameDiv {
+  height: 550px;
+  width: 425px;
+}
+
+.headshot {
+  height:412.5px;
+  width: 318.85px;
 }
 
 h1 {
   font-family: 'Rock Salt', cursive;
   margin: 0 auto;
   text-align: center
+}
+
+h3 {
+  font-family: 'Delius Swash Caps', cursive;
+}
+
+p {
+  text-align: justify;
+  font-family: 'Delius', cursive;
 }
 
 .aboutMeDiv {
@@ -51,7 +76,7 @@ h1 {
   justify-content: center;
   align-items: center;
   box-sizing: border-box;
-  border: solid black 2px;
+/*  border: solid black 2px;*/
   width: 45%;
   height: 600px;
 }
@@ -67,11 +92,7 @@ h1 {
 }
 
 
-p {
-  text-align: justify;
-}
-
-.skillsList {
+.centered {
   text-align: center;
 }
 
@@ -98,25 +119,25 @@ p {
 }
 
 .one {
-  background-color: red;
+  background-color: rgb(194, 35, 38);
 }
 
 .two {
-  background-color: orange;
+  background-color: rgb(243, 115, 56);
 }
 
 .three {
-  background-color: yellow;
+  background-color: rgb(252, 181, 50);
 }
 
 .four {
-  background-color: green;
+  background-color: rgb(2, 120, 120)
 }
 
 .five {
-  background-color: blue;
+  background-color: rgb(128, 22, 56);
 }
 
 .six {
-  background-color: purple;
+  background-color: rgb(70, 32, 102)
 }
