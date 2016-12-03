@@ -55,11 +55,13 @@ p {
 .aboutMeDiv {
   height: 600px;
   margin-bottom: 20px;
+  margin: 0 5%;
 }
 
 .skillsDiv {
   height: 600px;
   margin-bottom: 20px;
+  margin: 0 5%;
 }
 
 .blocks {
