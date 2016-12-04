@@ -1,77 +1,44 @@
+/*GLOBAL ELEMENTS*/
+
 body {
   background-color: rgb( 240, 240, 240);
   margin: 0px;
 }
 
-.landingDiv {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin: 0 auto;
-  margin-top: 60px;
-  height: 80vh;
-  width: 80vw;
-  background-color: rgb( 240, 240, 240);
-  color: rgb(5, 5, 5);
-  border: solid 2px rgb(5, 5, 5) ;
+label {
+  display: block;
+  font-family: 'Delius', cursive;
+}
+
+input {
+  margin: 5px 0;
+}
+
+textarea {
+  margin: 5px 0;
+}
+
+button {
+  font-family: 'Delius', cursive;
+}
+
+.contentDiv {
+  height: 600px;
+  margin-bottom: 20px;
+  margin: 0 5%;
 }
 
 .breakDiv {
   margin-top: 85px;
   margin-bottom: 85px;
-  height: 150px;
+  height: 100px;
   width: 100%;
   background-color: rgb(194, 35, 38);
 }
 
-.nameDiv {
-  height: 550px;
-  width: 425px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.headshot {
-  height:412.5px;
-  width: 318.85px;
-}
-
-h1 {
-  font-family: 'Rock Salt', cursive;
-  margin: 0 auto;
-  text-align: center
-}
-
-h3 {
-  font-family: 'Delius Swash Caps', cursive;
-}
-
-p {
-  text-align: justify;
-  font-family: 'Delius', cursive;
-}
-
-.aboutMeDiv {
-  height: 600px;
-  margin-bottom: 20px;
-  margin: 0 5%;
-}
-
-.skillsDiv {
-  height: 600px;
-  margin-bottom: 20px;
-  margin: 0 5%;
-}
-
-.blocks {
-  margin-left: 5%;
-  margin-right: 5%;
-  display: inline-block;
-  box-sizing: border-box;
-/*  border: solid black 2px;*/
-  width: 40%;
-  height: 600px;
+.endDiv {
+  height: 50px;
+  margin-bottom: 0;
 }
 
 .textFlex {
@@ -97,13 +64,145 @@ p {
   text-align: center;
 }
 
-
 .centered {
   text-align: center;
 }
 
+/*FONTS*/
+
+h1 {
+  font-family: 'Rock Salt', cursive;
+  margin: 0 auto;
+  text-align: center
+}
+
+h3 {
+  font-family: 'Delius Swash Caps', cursive;
+}
+
+p {
+  text-align: justify;
+  font-family: 'Delius', cursive;
+}
+
+/*COVER DIV*/
+
+.landingDiv {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  margin-top: 60px;
+  height: 80vh;
+  width: 80vw;
+  background-color: rgb( 240, 240, 240);
+  color: rgb(5, 5, 5);
+  border: solid 2px rgb(5, 5, 5) ;
+}
+
+.nameDiv {
+  height: 550px;
+  width: 425px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/*PROJECT DIV*/
+
+.project-flex {
+  flex-direction: column;
+}
+
+.project-text {
+  height: 10%;
+}
+
+.project-container {
+  width: 300px;
+  height: 155px;
+  border: solid rgb(194, 35, 38) 2px;
+  margin: 10px 0;
+}
+
+.project-png {
+  height: 125px;
+  width: 300px;
+}
+
+.project-name {
+  text-align: center;
+  font-family: 'Delius', cursive;
+  margin-bottom: 5px;
+}
+
+/*SKILLS DIV*/
+
+/*ABOUT ME DIV*/
+
+/*CONTACT DIV*/
+
+.headshot {
+  height:412.5px;
+  width: 318.85px;
+}
+
+.contact-form {
+/*  border: solid black .5px;*/
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+/*  justify-content: center;*/
+}
+
+.input-name {
+  width: 300px;
+}
+
+.input-email {
+  width: 300px;
+}
+
+.input-message {
+  width: 300px;
+  height: 100px;
+}
+
+.input-container {
+  width: 305px;
+  text-align: left;
+}
+
+.name-label {
+  margin-top: 10px;
+}
+
+.social-media-icon {
+  width: 40px;
+  height: 40px;
+  padding: 0 10px;
+}
+
+
+/*BLOCK CONTAINER*/
+
 .blankRow {
   height: 10%;
+}
+
+.blocks-container {
+  margin-left: 5%;
+  margin-right: 5%;
+  display: inline-block;
+  box-sizing: border-box;
+/*  border: solid black 2px;*/
+  width: 40%;
+  height: 600px;
+}
+
+.right {
+  justify-content: flex-end;
 }
 
 .row {
@@ -112,9 +211,7 @@ p {
   display: flex;
 }
 
-.right {
-  justify-content: flex-end;
-}
+/*INDIVIDUAL BLOCKS*/
 
 .block {
   height: 100%;
@@ -146,9 +243,4 @@ p {
 
 .six {
   background-color: rgb(70, 32, 102)
-}
-
-#headshot {
-  height: 400px;
-  border-radius: 20px;
 }
