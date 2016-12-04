@@ -59,7 +59,7 @@ button {
 }
 
 .textBox {
-  height: 500px;
+  height: 100%;
   width: 400px;
   text-align: center;
 }
@@ -108,7 +108,7 @@ p {
   align-items: center;
 }
 
-/*PROJECT DIV*/
+/*PROJECTS DIV*/
 
 .project-flex {
   flex-direction: column;
@@ -134,6 +134,75 @@ p {
   text-align: center;
   font-family: 'Delius', cursive;
   margin-bottom: 5px;
+}
+
+.modal {
+  display: none;
+  position: fixed;
+  height: 60%;
+  width: 60%;
+  left: 20%;
+  top: 20%;
+  z-index: 1;
+  overflow: auto;
+  background-color: rgb( 240, 240, 240);
+  border: solid black 2px;
+  margin: 3px;
+}
+
+.modal-content {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+}
+
+.modal-left {
+  height: 80%;
+  width: 50%;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.modal-right {
+  height: 80%;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-title {
+  text-align: center;
+  height: 20%;
+}
+
+.modal-img-container {
+  height: 80%;
+}
+
+.modal-img {
+  height: 200px;
+  width: 340px;
+}
+
+.modal-text {
+  margin: 10px;
+}
+
+.close-modal {
+display: inline-block;
+font-family: 'Delius', cursive;
+border: rgb(194, 35, 38) solid 2px;
+width: 25%;
+text-align: center;
+
+
 }
 
 /*SKILLS DIV*/
