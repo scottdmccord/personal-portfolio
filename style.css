@@ -136,6 +136,10 @@ p {
   margin-bottom: 5px;
 }
 
+.project-name:hover {
+  cursor: pointer;
+}
+
 .modal {
   display: none;
   position: fixed;
@@ -146,7 +150,7 @@ p {
   z-index: 1;
   overflow: auto;
   background-color: rgb( 240, 240, 240);
-  border: solid black 2px;
+  border: solid black 5px;
   margin: 3px;
 }
 
@@ -201,8 +205,10 @@ font-family: 'Delius', cursive;
 border: rgb(194, 35, 38) solid 2px;
 width: 25%;
 text-align: center;
+}
 
-
+.close-modal:hover {
+  cursor: pointer;
 }
 
 /*SKILLS DIV*/
@@ -210,6 +216,11 @@ text-align: center;
 /*ABOUT ME DIV*/
 
 /*CONTACT DIV*/
+
+.in-touch-heading {
+  margin-top: 50px;
+  margin-bottom: 20px;
+}
 
 .headshot {
   height:412.5px;
