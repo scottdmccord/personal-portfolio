@@ -22,6 +22,48 @@ button {
   font-family: 'Delius', cursive;
 }
 
+.nav-bar {
+  height: 30px;
+  width: 100%;
+  background-color: rgb(194, 35, 38);
+}
+
+.nav-element {
+  margin-right: -5px;
+  padding-top: 5px;
+  padding-left: 10px;
+  display: inline-block;
+  width: 100px;
+  height: 25px;
+  text-align: center;
+  color: rgb( 240, 240, 240);
+  font-family: 'Delius', cursive;
+}
+
+.nav-element:hover {
+/*  display: inline-flex;
+  justify-content: center;
+  align-items: center;*/
+  cursor: pointer;
+  height: 85px;
+}
+
+.nav-about {
+  background-color: rgb(243, 115, 56);
+}
+
+.nav-skills {
+  background-color: rgb(252, 181, 50);
+}
+
+.nav-projects {
+  background-color: rgb(2, 120, 120);
+}
+
+.nav-contact {
+  background-color: rgb(128, 22, 56);
+}
+
 .contentDiv {
   height: 600px;
   margin-bottom: 20px;
@@ -29,9 +71,9 @@ button {
 }
 
 .breakDiv {
-  margin-top: 85px;
-  margin-bottom: 85px;
-  height: 100px;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  height: 50px;
   width: 100%;
   background-color: rgb(194, 35, 38);
 }
@@ -106,6 +148,7 @@ p {
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
 }
 
 /*PROJECTS DIV*/
@@ -305,6 +348,66 @@ text-align: center;
   background-color: rgb(194, 35, 38);
 }
 
+.moving-one {
+  animation-name: blockOne;
+  animation-duration: 2s;
+}
+
+@keyframes blockOne {
+  0% {margin-top: -100px};
+  100% {margin-top: 0px;}
+}
+
+.moving-two {
+  animation-name: blockTwo;
+  animation-duration: 2s;
+}
+
+@keyframes blockTwo {
+  0% {margin-left: -100px};
+  100% {margin-left: 0px;}
+}
+
+.moving-three {
+  animation-name: blockThree;
+  animation-duration: 2s;
+}
+
+@keyframes blockThree {
+  0% {margin-top: -100px};
+  100% {margin-top: 0px;}
+}
+
+.moving-four {
+  animation-name: blockFour;
+  animation-duration: 2s;
+}
+
+@keyframes blockFour {
+  0% {margin-left: -50px};
+  100% {margin-left: 0px;}
+}
+
+.moving-five {
+  animation-name: blockFive;
+  animation-duration: 2s;
+}
+
+@keyframes blockFive {
+  0% {margin-left: -100px};
+  100% {margin-left: 0px};
+}
+
+.moving-six {
+  animation-name: blockSix;
+  animation-duration: 2s;
+}
+
+@keyframes blockSix {
+  0% {margin-top: -100px};
+  100% {margin-top: 0px};
+}
+
 .two {
   background-color: rgb(243, 115, 56);
 }
@@ -314,7 +417,7 @@ text-align: center;
 }
 
 .four {
-  background-color: rgb(2, 120, 120)
+  background-color: rgb(2, 120, 120);
 }
 
 .five {
