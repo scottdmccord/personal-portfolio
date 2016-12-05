@@ -21,8 +21,21 @@ neighborhoodClose = document.querySelector(".neighborhood-close");
 
 neighborhoodTitle.addEventListener('click', () => {
   neighborhoodModal.style.display = "block"
-})
+});
 
 neighborhoodClose.addEventListener('click', () => {
   neighborhoodModal.style.display = "none"
-})
+});
+
+// Event listener to open and close the robot rivalry modal
+robotTitle = document.querySelector(".robot-link");
+robotModal = document.querySelector(".robot-display");
+robotClose = document.querySelector(".robot-close");
+
+robotTitle.addEventListener('click', () => {
+  robotModal.style.display = "block"
+});
+
+robotClose.addEventListener('click', () => {
+  robotModal.style.display = "none"
+});
