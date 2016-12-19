@@ -348,6 +348,10 @@ text-align: center;
   background-color: rgb(194, 35, 38);
 }
 
+.project-block-one {
+  margin-top: -100px;
+}
+
 .moving-one {
   animation-name: blockOne;
   animation-duration: 2s;
@@ -356,6 +360,14 @@ text-align: center;
 @keyframes blockOne {
   0% {margin-top: -100px};
   100% {margin-top: 0px;}
+}
+
+.two {
+  background-color: rgb(243, 115, 56);
+}
+
+.project-block-two {
+  margin-left: -100px;
 }
 
 .moving-two {
@@ -368,6 +380,14 @@ text-align: center;
   100% {margin-left: 0px;}
 }
 
+.three {
+  background-color: rgb(252, 181, 50);
+}
+
+.project-block-three {
+  margin-top: -100px;
+}
+
 .moving-three {
   animation-name: blockThree;
   animation-duration: 2s;
@@ -376,6 +396,14 @@ text-align: center;
 @keyframes blockThree {
   0% {margin-top: -100px};
   100% {margin-top: 0px;}
+}
+
+.four {
+  background-color: rgb(2, 120, 120);
+}
+
+.project-block-four {
+  margin-left: -50px;
 }
 
 .moving-four {
@@ -388,6 +416,14 @@ text-align: center;
   100% {margin-left: 0px;}
 }
 
+.five {
+  background-color: rgb(128, 22, 56);
+}
+
+.project-block-five {
+  margin-left: -100px;
+}
+
 .moving-five {
   animation-name: blockFive;
   animation-duration: 2s;
@@ -396,6 +432,14 @@ text-align: center;
 @keyframes blockFive {
   0% {margin-left: -100px};
   100% {margin-left: 0px};
+}
+
+.six {
+  background-color: rgb(70, 32, 102)
+}
+
+.project-block-six {
+  margin-top: -100px;
 }
 
 .moving-six {
@@ -408,22 +452,3 @@ text-align: center;
   100% {margin-top: 0px};
 }
 
-.two {
-  background-color: rgb(243, 115, 56);
-}
-
-.three {
-  background-color: rgb(252, 181, 50);
-}
-
-.four {
-  background-color: rgb(2, 120, 120);
-}
-
-.five {
-  background-color: rgb(128, 22, 56);
-}
-
-.six {
-  background-color: rgb(70, 32, 102)
-}

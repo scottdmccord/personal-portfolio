@@ -2,9 +2,24 @@ console.log("DOM ready!")
 
 // SCROLLING COMMANDS
 
+
 function triggerBlock1() {
-  if (window.pageYOffset > 500) {
-    alert ('scrolled!');
+
+  let projectBlockOne = document.querySelector('.project-block-one');
+  let projectBlockTwo = document.querySelector('.project-block-two');
+  let projectBlockThree = document.querySelector('.project-block-three');
+  let projectBlockFour = document.querySelector('.project-block-four');
+  let projectBlockFive = document.querySelector('.project-block-five');
+  let projectBlockSix = document.querySelector('.project-block-six');
+
+  if (window.pageYOffset  > 600  && window.pageYOffset < 850) {
+    console.log("Scroll event listening!");
+    projectBlockOne.setAttribute('class', 'block one moving-one');
+    projectBlockTwo.setAttribute('class', 'block two moving-two');
+    projectBlockThree.setAttribute('class', 'block three moving-three');
+    projectBlockFour.setAttribute('class', 'block four moving-four');
+    projectBlockFive.setAttribute('class', 'block five moving-five');
+    projectBlockSix.setAttribute('class', 'block six moving-six');
   }
 }
 
