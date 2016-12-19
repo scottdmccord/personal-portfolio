@@ -12,6 +12,20 @@ function triggerBlock1() {
   let projectBlockFive = document.querySelector('.project-block-five');
   let projectBlockSix = document.querySelector('.project-block-six');
 
+  let skillsBlockOne = document.querySelector('.skills-block-one');
+  let skillsBlockTwo = document.querySelector('.skills-block-two');
+  let skillsBlockThree = document.querySelector('.skills-block-three');
+  let skillsBlockFour = document.querySelector('.skills-block-four');
+  let skillsBlockFive = document.querySelector('.skills-block-five');
+  let skillsBlockSix = document.querySelector('.skills-block-six');
+
+  let aboutmeBlockOne = document.querySelector('.aboutme-block-one');
+  let aboutmeBlockTwo = document.querySelector('.aboutme-block-two');
+  let aboutmeBlockThree = document.querySelector('.aboutme-block-three');
+  let aboutmeBlockFour = document.querySelector('.aboutme-block-four');
+  let aboutmeBlockFive = document.querySelector('.aboutme-block-five');
+  let aboutmeBlockSix = document.querySelector('.aboutme-block-six');
+
   if (window.pageYOffset  > 600  && window.pageYOffset < 850) {
     console.log("Scroll event listening!");
     projectBlockOne.setAttribute('class', 'block one moving-one');
@@ -20,6 +34,26 @@ function triggerBlock1() {
     projectBlockFour.setAttribute('class', 'block four moving-four');
     projectBlockFive.setAttribute('class', 'block five moving-five');
     projectBlockSix.setAttribute('class', 'block six moving-six');
+  }
+
+  else if (window.pageYOffset > 1400 && window.pageYOffset < 1650) {
+    console.log("Circle scroll event listening!");
+    skillsBlockOne.setAttribute('class', 'block one skills-moving');
+    skillsBlockTwo.setAttribute('class', 'block two skills-moving')
+    skillsBlockThree.setAttribute('class', 'block three skills-moving')
+    skillsBlockFour.setAttribute('class', 'block four skills-moving')
+    skillsBlockFive.setAttribute('class', 'block five skills-moving')
+    skillsBlockSix.setAttribute('class', 'block six skills-moving')
+  }
+
+  else if (window.pageYOffset > 2100 && window.pageYOffset < 2350) {
+    console.log("change colors!");
+    aboutmeBlockOne.setAttribute('class', 'block aboutme-change-one');
+    aboutmeBlockTwo.setAttribute('class', 'block aboutme-change-two');
+    aboutmeBlockThree.setAttribute('class', 'block aboutme-change-three');
+    aboutmeBlockFour.setAttribute('class', 'block aboutme-change-four');
+    aboutmeBlockFive.setAttribute('class', 'block aboutme-change-five');
+    aboutmeBlockSix.setAttribute('class', 'block aboutme-change-six');
   }
 }
 

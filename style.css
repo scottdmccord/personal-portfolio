@@ -435,7 +435,7 @@ text-align: center;
 }
 
 .six {
-  background-color: rgb(70, 32, 102)
+  background-color: rgb(70, 32, 102);
 }
 
 .project-block-six {
@@ -452,3 +452,106 @@ text-align: center;
   100% {margin-top: 0px};
 }
 
+.skills-block-before {
+  border-radius: 100%;
+}
+
+.skills-moving {
+  animation-name: skillsBlock;
+  animation-duration: 3s;
+}
+
+@keyframes skillsBlock {
+  0% {border-radius: 100%;}
+  100% {border-radius: 0%}
+}
+
+.aboutme-block-one {
+  background-color: rgb(70, 32, 102);
+}
+
+.aboutme-change-one {
+  animation-name: colorOne;
+  animation-duration: 3s;
+  background-color: rgb(194, 35, 38);
+}
+
+@keyframes colorOne {
+  0% {background-color: rgb(70, 32, 102)}
+  100% {background-color: rgb(194, 35, 38);}
+}
+
+.aboutme-block-two {
+  background-color: rgb(252, 181, 50);
+}
+
+.aboutme-change-two {
+  animation-name: colorTwo;
+  animation-duration: 3s;
+  background-color: rgb(243, 115, 56);
+}
+
+@keyframes colorTwo {
+  0% {background-color: rgb(252, 181, 50)}
+  100% {background-color: rgb(243, 115, 56)}
+}
+
+.aboutme-block-three {
+  background-color: rgb(194, 35, 38);
+}
+
+.aboutme-change-three {
+  animation-name: colorThree;
+  animation-duration: 3s;
+  background-color: rgb(252, 181, 50);
+}
+
+@keyframes colorThree {
+  0% {background-color: rgb(194, 35, 38)}
+  100% {background-color: rgb(252, 181, 50)}
+}
+
+.aboutme-block-four {
+  background-color: rgb(128, 22, 56);
+}
+
+.aboutme-change-four {
+  animation-name: colorFour;
+  animation-duration: 3s;
+  background-color: rgb(2, 120, 120);
+}
+
+@keyframes colorFour {
+  0% {background-color: rgb(128, 22, 56)}
+  100% {background-color: rgb(2, 120, 120)}
+}
+
+.aboutme-block-five {
+  background-color: rgb(243, 115, 56);
+}
+
+.aboutme-change-five {
+  animation-name: colorFive;
+  animation-duration: 3s;
+  background-color: rgb(128, 22, 56);
+}
+
+@keyframes colorFive {
+  0% {background-color: rgb(243, 115, 56)}
+  100% {background-color: rgb(128, 22, 56)}
+}
+
+.aboutme-block-six {
+  background-color: rgb(2, 120, 120);
+}
+
+.aboutme-change-six {
+  animation-name: colorSix;
+  animation-duration: 3s;
+  background-color: rgb(70, 32, 102);
+}
+
+@keyframes colorSix {
+  0% {background-color: rgb(2, 120, 120)}
+  100% {background-color: rgb(70, 32, 102)}
+}
