@@ -2,6 +2,15 @@ console.log("DOM ready!")
 
 // SCROLLING COMMANDS
 
+function triggerBlock1() {
+  if (window.pageYOffset > 500) {
+    alert ('scrolled!');
+  }
+}
+
+window.onscroll = triggerBlock1
+
+
 // ABOUT ME LINK
 aboutMeClick = document.querySelector(".nav-about");
 aboutMeDiv = document.querySelector(".aboutMeDiv");
