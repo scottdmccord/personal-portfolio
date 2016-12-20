@@ -26,6 +26,13 @@ function triggerBlock1() {
   let aboutmeBlockFive = document.querySelector('.aboutme-block-five');
   let aboutmeBlockSix = document.querySelector('.aboutme-block-six');
 
+  let contactBlockOne = document.querySelector('.contact-block-one');
+  let contactBlockTwo = document.querySelector('.contact-block-two');
+  let contactBlockThree = document.querySelector('.contact-block-three');
+  let contactBlockFour = document.querySelector('.contact-block-four');
+  let contactBlockFive = document.querySelector('.contact-block-five');
+  let contactBlockSix = document.querySelector('.contact-block-six');
+
   if (window.pageYOffset  > 600  && window.pageYOffset < 850) {
     console.log("Scroll event listening!");
     projectBlockOne.setAttribute('class', 'block one moving-one');
@@ -54,6 +61,16 @@ function triggerBlock1() {
     aboutmeBlockFour.setAttribute('class', 'block aboutme-change-four');
     aboutmeBlockFive.setAttribute('class', 'block aboutme-change-five');
     aboutmeBlockSix.setAttribute('class', 'block aboutme-change-six');
+  }
+
+  else if (window.pageYOffset > 2800 && window.pageYOffset < 3050) {
+    console.log("spin blocks!");
+    contactBlockOne.setAttribute('class', 'block one contact-change');
+    contactBlockTwo.setAttribute('class', 'block two contact-change');
+    contactBlockThree.setAttribute('class', 'block three contact-change');
+    contactBlockFour.setAttribute('class', 'block four contact-change');
+    contactBlockFive.setAttribute('class', 'block five contact-change');
+    contactBlockSix.setAttribute('class', 'block six contact-change');
   }
 }
 
