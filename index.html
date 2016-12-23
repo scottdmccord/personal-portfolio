@@ -231,24 +231,25 @@
         below to send me a message. You can also message me on any of my social media pages.
         Looking forward to hearing from you! </p>
 
-        <form class="contact-form">
+        <form class="contact-form" action="mailer.php" method="post">
           <div class="input-container">
             <label class="name-label"> Name: </label>
-            <input class="input-name" type="text"/>
+            <input class="input-name" type="name"/>
           </div>
 
           <div class="input-container">
             <label> Email: </label>
-            <input class="input-email" type="text"/>
+            <input class="input-email" type="email"/>
           </div>
 
           <div class="input-container">
             <label> Message: </label>
-            <textarea class="input-message" type="input"></textarea>
+            <textarea class="input-message" name="message"></textarea>
           </div>
 
           <div class="input-container">
-          <button class="submit-button"> Submit </button>
+          <input class="send" type="submit" value="Send">
+          <!-- <button class="submit-button"> Submit </button> -->
           </div>
 
         </form>
