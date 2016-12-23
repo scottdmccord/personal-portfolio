@@ -1,4 +1,7 @@
 <?php
+// this form was created using Code Chirp's template:
+// http://codechirps.com/php-email-contact-form-tutorial/
+
 /* Set e-mail recipient */
 $myemail = "scott.sdm27@gmail.com";
 
