@@ -1,6 +1,10 @@
 console.log("DOM ready!")
 
 // SCROLLING COMMANDS
+let counter1 = 0;
+let counter2 = 0;
+let counter3 = 0;
+let counter4 = 0;
 
 
 function triggerBlock1() {
@@ -34,43 +38,55 @@ function triggerBlock1() {
   let contactBlockSix = document.querySelector('.contact-block-six');
 
   if (window.pageYOffset  > 600  && window.pageYOffset < 850) {
-    console.log("Scroll event listening!");
-    projectBlockOne.setAttribute('class', 'block one moving-one');
-    projectBlockTwo.setAttribute('class', 'block two moving-two');
-    projectBlockThree.setAttribute('class', 'block three moving-three');
-    projectBlockFour.setAttribute('class', 'block four moving-four');
-    projectBlockFive.setAttribute('class', 'block five moving-five');
-    projectBlockSix.setAttribute('class', 'block six moving-six');
+    if (counter1 < 1) {
+      console.log("Scroll event listening!");
+      projectBlockOne.setAttribute('class', 'block one moving-one');
+      projectBlockTwo.setAttribute('class', 'block two moving-two');
+      projectBlockThree.setAttribute('class', 'block three moving-three');
+      projectBlockFour.setAttribute('class', 'block four moving-four');
+      projectBlockFive.setAttribute('class', 'block five moving-five');
+      projectBlockSix.setAttribute('class', 'block six moving-six');
+      counter1 += 1;
+    }
   }
 
   else if (window.pageYOffset > 1400 && window.pageYOffset < 1650) {
-    console.log("Circle scroll event listening!");
-    skillsBlockOne.setAttribute('class', 'block one skills-moving');
-    skillsBlockTwo.setAttribute('class', 'block two skills-moving')
-    skillsBlockThree.setAttribute('class', 'block three skills-moving')
-    skillsBlockFour.setAttribute('class', 'block four skills-moving')
-    skillsBlockFive.setAttribute('class', 'block five skills-moving')
-    skillsBlockSix.setAttribute('class', 'block six skills-moving')
+    if (counter2 < 1) {
+      console.log("Circle scroll event listening!");
+      skillsBlockOne.setAttribute('class', 'block one skills-moving');
+      skillsBlockTwo.setAttribute('class', 'block two skills-moving');
+      skillsBlockThree.setAttribute('class', 'block three skills-moving');
+      skillsBlockFour.setAttribute('class', 'block four skills-moving');
+      skillsBlockFive.setAttribute('class', 'block five skills-moving');
+      skillsBlockSix.setAttribute('class', 'block six skills-moving');
+      counter2 += 1;
+    }
   }
 
   else if (window.pageYOffset > 2100 && window.pageYOffset < 2350) {
-    console.log("change colors!");
-    aboutmeBlockOne.setAttribute('class', 'block aboutme-change-one');
-    aboutmeBlockTwo.setAttribute('class', 'block aboutme-change-two');
-    aboutmeBlockThree.setAttribute('class', 'block aboutme-change-three');
-    aboutmeBlockFour.setAttribute('class', 'block aboutme-change-four');
-    aboutmeBlockFive.setAttribute('class', 'block aboutme-change-five');
-    aboutmeBlockSix.setAttribute('class', 'block aboutme-change-six');
+    if (counter3 < 1) {
+      console.log("change colors!");
+      aboutmeBlockOne.setAttribute('class', 'block aboutme-change-one');
+      aboutmeBlockTwo.setAttribute('class', 'block aboutme-change-two');
+      aboutmeBlockThree.setAttribute('class', 'block aboutme-change-three');
+      aboutmeBlockFour.setAttribute('class', 'block aboutme-change-four');
+      aboutmeBlockFive.setAttribute('class', 'block aboutme-change-five');
+      aboutmeBlockSix.setAttribute('class', 'block aboutme-change-six');
+      counter3 ++;
+    }
   }
 
   else if (window.pageYOffset > 2800 && window.pageYOffset < 3050) {
-    console.log("spin blocks!");
-    contactBlockOne.setAttribute('class', 'block one contact-change');
-    contactBlockTwo.setAttribute('class', 'block two contact-change');
-    contactBlockThree.setAttribute('class', 'block three contact-change');
-    contactBlockFour.setAttribute('class', 'block four contact-change');
-    contactBlockFive.setAttribute('class', 'block five contact-change');
-    contactBlockSix.setAttribute('class', 'block six contact-change');
+    if (counter4 < 1) {
+      console.log("spin blocks!");
+      contactBlockOne.setAttribute('class', 'block one contact-change');
+      contactBlockTwo.setAttribute('class', 'block two contact-change');
+      contactBlockThree.setAttribute('class', 'block three contact-change');
+      contactBlockFour.setAttribute('class', 'block four contact-change');
+      contactBlockFive.setAttribute('class', 'block five contact-change');
+      contactBlockSix.setAttribute('class', 'block six contact-change');
+      counter4 ++;
+    }
   }
 }
 
