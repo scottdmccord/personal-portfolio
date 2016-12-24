@@ -7,7 +7,7 @@ $myemail = "scott.d.mccord@gmail.com";
 
 /* Check all form inputs using check_input function */
 $name = check_input($_POST['name'], "Enter your name");
-$subject = check_input($_POST['subject'], "Enter a subject");
+$subject = "Web Contact Form"
 $email = check_input($_POST['email']);
 $message = check_input($_POST['message'], "Write your message");
 
@@ -21,7 +21,7 @@ $message = "
 
 Name: $name
 E-mail: $email
-Subject: Web Contact Form
+Subject: $subject
 
 Message:
 $message
