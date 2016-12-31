@@ -164,15 +164,15 @@ neighborhoodClose.addEventListener('click', () => {
   neighborhoodModal.style.display = "none"
 });
 
-// Event listener to open and close the robot rivalry modal
-robotTitle = document.querySelector(".robot-link");
-robotModal = document.querySelector(".robot-display");
-robotClose = document.querySelector(".robot-close");
+// Event listener to open and close the home cookin modal
+cookinTitle = document.querySelector(".cookin-link");
+cookinModal = document.querySelector(".cookin-display");
+cookinClose = document.querySelector(".cookin-close");
 
-robotTitle.addEventListener('click', () => {
-  robotModal.style.display = "block"
+cookinTitle.addEventListener('click', () => {
+  cookinModal.style.display = "block"
 });
 
-robotClose.addEventListener('click', () => {
-  robotModal.style.display = "none"
+cookinClose.addEventListener('click', () => {
+  cookinModal.style.display = "none"
 });

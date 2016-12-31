@@ -86,6 +86,9 @@ button {
 .textFlex {
   margin-right: 5%;
   float: right;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -145,6 +148,9 @@ p {
 .nameDiv {
   height: 550px;
   width: 425px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -198,6 +204,9 @@ p {
 }
 
 .modal-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -209,6 +218,9 @@ p {
 .modal-left {
   height: 80%;
   width: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
   display: flex;
   text-align: center;
   justify-content: center;
@@ -218,6 +230,9 @@ p {
 .modal-right {
   height: 80%;
   width: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -273,6 +288,9 @@ text-align: center;
 .contact-form {
 /*  border: solid black .5px;*/
   height: 300px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -335,6 +353,9 @@ text-align: center;
 .row {
   height: 30%;
   width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
   display: flex;
 }
 
@@ -357,8 +378,13 @@ text-align: center;
 }
 
 .moving-one {
-  animation-name: blockOne;
-  animation-duration: 2s;
+  -webkit-animation: blockOne 2s;
+  animation: blockOne 2s;
+}
+
+@-webkit-keyframes blockOne {
+  0% {margin-top: -100px};
+  100% {margin-top: 0px;}
 }
 
 @keyframes blockOne {
@@ -375,8 +401,13 @@ text-align: center;
 }
 
 .moving-two {
-  animation-name: blockTwo;
-  animation-duration: 2s;
+  -webkit-animation: blockTwo 2s;
+  animation: blockTwo 2s;
+}
+
+@-webkit-keyframes blockTwo {
+  0% {margin-left: -100px};
+  100% {margin-left: 0px;}
 }
 
 @keyframes blockTwo {
@@ -393,8 +424,13 @@ text-align: center;
 }
 
 .moving-three {
-  animation-name: blockThree;
-  animation-duration: 2s;
+  -webkit-animation: blockThree 2s;
+  animation: blockThree 2s;
+}
+
+@-webkit-keyframes blockThree {
+  0% {margin-top: -100px};
+  100% {margin-top: 0px;}
 }
 
 @keyframes blockThree {
@@ -411,12 +447,17 @@ text-align: center;
 }
 
 .moving-four {
-  animation-name: blockFour;
-  animation-duration: 2s;
+  -webkit-animation: blockFour 2s;
+  animation: blockFour 2s;
+}
+
+@-webkit-keyframes blockFour {
+  0% {margin-left: -50px}
+  100% {margin-left: 0px;}
 }
 
 @keyframes blockFour {
-  0% {margin-left: -50px};
+  0% {margin-left: -50px}
   100% {margin-left: 0px;}
 }
 
@@ -429,13 +470,18 @@ text-align: center;
 }
 
 .moving-five {
-  animation-name: blockFive;
-  animation-duration: 2s;
+  -webkit-animation: blockFive 2s;
+  animation: blockFive 2s;
+}
+
+@-webkit-keyframes blockFive {
+  0% {margin-left: -100px}
+  100% {margin-left: 0px}
 }
 
 @keyframes blockFive {
-  0% {margin-left: -100px};
-  100% {margin-left: 0px};
+  0% {margin-left: -100px}
+  100% {margin-left: 0px}
 }
 
 .six {
@@ -447,13 +493,18 @@ text-align: center;
 }
 
 .moving-six {
-  animation-name: blockSix;
-  animation-duration: 2s;
+  -webkit-animation: blockSix 2s;
+  animation: blockSix 2s;
+}
+
+@-webkit-keyframes blockSix {
+  0% {margin-top: -100px}
+  100% {margin-top: 0px}
 }
 
 @keyframes blockSix {
-  0% {margin-top: -100px};
-  100% {margin-top: 0px};
+  0% {margin-top: -100px}
+  100% {margin-top: 0px}
 }
 
 .skills-block-before {
@@ -461,8 +512,13 @@ text-align: center;
 }
 
 .skills-moving {
-  animation-name: skillsBlock;
-  animation-duration: 3s;
+  -webkit-animation: skillsBlock 3s;
+  animation: skillsBlock 3s;
+}
+
+@-webkit-keyframes skillsBlock {
+  0% {border-radius: 100%}
+  100% {border-radius: 0%}
 }
 
 @keyframes skillsBlock {
@@ -475,14 +531,19 @@ text-align: center;
 }
 
 .aboutme-change-one {
-  animation-name: colorOne;
-  animation-duration: 3s;
+  -webkit-animation: colorOne 3s;
+  animation: colorOne 3s;
   background-color: rgb(194, 35, 38);
+}
+
+@-webkit-keyframes colorOne {
+  0% {background-color: rgb(70, 32, 102)}
+  100% {background-color: rgb(194, 35, 38)}
 }
 
 @keyframes colorOne {
   0% {background-color: rgb(70, 32, 102)}
-  100% {background-color: rgb(194, 35, 38);}
+  100% {background-color: rgb(194, 35, 38)}
 }
 
 .aboutme-block-two {
@@ -490,9 +551,14 @@ text-align: center;
 }
 
 .aboutme-change-two {
-  animation-name: colorTwo;
-  animation-duration: 3s;
+  -webkit-animation: colorTwo 3s;
+  animation: colorTwo 3s;
   background-color: rgb(243, 115, 56);
+}
+
+@-webkit-keyframes colorTwo {
+  0% {background-color: rgb(252, 181, 50)}
+  100% {background-color: rgb(243, 115, 56)}
 }
 
 @keyframes colorTwo {
@@ -505,9 +571,14 @@ text-align: center;
 }
 
 .aboutme-change-three {
-  animation-name: colorThree;
-  animation-duration: 3s;
+  -webkit-animation: colorThree 3s;
+  animation: colorThree 3s;
   background-color: rgb(252, 181, 50);
+}
+
+@-webkit-keyframes colorThree {
+  0% {background-color: rgb(194, 35, 38)}
+  100% {background-color: rgb(252, 181, 50)}
 }
 
 @keyframes colorThree {
@@ -520,9 +591,14 @@ text-align: center;
 }
 
 .aboutme-change-four {
-  animation-name: colorFour;
-  animation-duration: 3s;
+  -webkit-animation: colorFour 3s;
+  animation: colorFour 3s;
   background-color: rgb(2, 120, 120);
+}
+
+@-webkit-keyframes colorFour {
+  0% {background-color: rgb(128, 22, 56)}
+  100% {background-color: rgb(2, 120, 120)}
 }
 
 @keyframes colorFour {
@@ -535,9 +611,14 @@ text-align: center;
 }
 
 .aboutme-change-five {
-  animation-name: colorFive;
-  animation-duration: 3s;
+  -webkit-animation: colorFive 3s;
+  animation: colorFive 3s;
   background-color: rgb(128, 22, 56);
+}
+
+@-webkit-keyframes colorFive {
+  0% {background-color: rgb(243, 115, 56)}
+  100% {background-color: rgb(128, 22, 56)}
 }
 
 @keyframes colorFive {
@@ -550,9 +631,14 @@ text-align: center;
 }
 
 .aboutme-change-six {
-  animation-name: colorSix;
-  animation-duration: 3s;
+  -webkit-animation: colorSix 3s;
+  animation: colorSix 3s;
   background-color: rgb(70, 32, 102);
+}
+
+@-webkit-keyframes colorSix {
+  0% {background-color: rgb(2, 120, 120)}
+  100% {background-color: rgb(70, 32, 102)}
 }
 
 @keyframes colorSix {
@@ -565,17 +651,36 @@ text-align: center;
 }
 
 .contact-change {
-  animation-name: contactMove;
-  animation-duration: 3s;
+  -webkit-animation: contactMove 3s;
+  animation: contactMove 3s;
+}
+
+@-webkit-keyframes contactMove {
+  0% {
+    margin-right: -100px;
+    -ms-transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    margin-right: 0;
+    -ms-transform: rotate(360deg);
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
 }
 
 @keyframes contactMove {
   0% {
     margin-right: -100px;
+    -ms-transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
     transform: rotate(0deg);
   }
   100% {
     margin-right: 0;
+    -ms-transform: rotate(360deg);
+    -webkit-transform: rotate(360deg);
     transform: rotate(360deg);
   }
 }
