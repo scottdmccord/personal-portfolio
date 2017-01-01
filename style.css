@@ -113,14 +113,6 @@ button {
   text-align: center;
 }
 
-.chalkboard {
-  background-image: url("./images/chalkboard.png");
-  height: 60%;
-  border: solid 3px rgb(194, 35, 38);
-  color: #FAFAFA;
-  font-family: 'Londrina Outline', cursive;
-  font-size: 20px;
-}
 
 /*FONTS*/
 
@@ -137,6 +129,12 @@ h3 {
 p {
   text-align: justify;
   font-family: 'Delius', cursive;
+}
+
+/*Eraser font from http://www.fontspace.com/david-rakowski/eraser*/
+@font-face {
+  font-family: EraserDust;
+  src: url(EraserDust.ttf);
 }
 
 /*COVER DIV*/
@@ -279,6 +277,15 @@ text-align: center;
 }
 
 /*SKILLS DIV*/
+
+.chalkboard {
+  background-image: url("./images/chalkboard.png");
+  height: 60%;
+  border: solid 3px rgb(194, 35, 38);
+  color: #FAFAFA;
+  font-family: EraserDust;
+  font-size: 20px;
+}
 
 /*ABOUT ME DIV*/
 
