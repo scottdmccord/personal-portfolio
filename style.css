@@ -41,11 +41,7 @@ button {
 }
 
 .nav-element:hover {
-/*  display: inline-flex;
-  justify-content: center;
-  align-items: center;*/
   cursor: pointer;
-  height: 85px;
 }
 
 .nav-about {
@@ -285,6 +281,28 @@ text-align: center;
   color: #FAFAFA;
   font-family: EraserDust;
   font-size: 20px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.check-box-holder {
+  height: 70%;
+}
+
+.check-box {
+  height: 25px;
+}
+
+.skills-holder {
+  height: 70%;
+  text-align: left;
+}
+
+.skill {
+  height: 25px;
+  margin-left: 25%;
 }
 
 /*ABOUT ME DIV*/
@@ -700,3 +718,66 @@ text-align: center;
     transform: rotate(360deg);
   }
 }
+
+/*Media Queries*/
+
+@media (max-width: 1200px) {
+  .modal-left {
+    display: none;
+  }
+  .modal-right {
+    width: 80%;
+  }
+}
+
+@media (max-width: 800px) {
+  p {
+    font-size: 15px;
+  }
+
+  .contactTextFlex {
+    padding-left: 10%;
+    padding-right: -10%;
+  }
+
+}
+
+@media (max-width: 725px) {
+
+  h1 {
+    font-size: 25px;
+  }
+
+  h3 {
+    font-size: 15px;
+  }
+
+  p {
+    font-size: 13px;
+  }
+
+  .nav-element {
+    width: 60px;
+    font-size: 10px;
+    padding-top: 7px;
+    height: 23px;
+  }
+
+  .blocks-container {
+    width: 20%;
+  }
+
+  .textFlex {
+    width: 60%;
+    padding-left: 10%;
+  }
+
+  .social-media-icon {
+    width: 30px;
+    height: 30px;
+    padding: 0 10px;
+  }
+}
+
+
+
