@@ -188,7 +188,7 @@ p {
   margin-bottom: 5px;
 }
 
-.project-name:hover {
+.project-container:hover {
   cursor: pointer;
 }
 
